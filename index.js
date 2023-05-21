@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // Endpoint to receive webhook events from Messenger API
-app.post('/webhook', (req, res) => {
+app.post('/webhook', (req, res) => { 
     const body = req.body;
 
     if (body.object === 'page') {
